@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/26276ba5c9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+      <div class="row">
+        <div class="col-6">
+          <input
+            type="search"
+            id="search-city"
+            class="search"
+            placeholder="Type a city..."
+            autocomplete="off"
+            autofocus: on
+          />
+        </div>
+        <div class="col-3">
+          <button type="submit" class="search-button">Search the city
+          </button>
+        </div>
+        <div class="col-3">
+          <button type="submit" class="search-button" id="search-current-location">Current location
+          </button>
+        </div>
+      </div>
+      </form>
+      <ul>
+        <li class="first-city">London</li>
+        <li class="second-city">New York</li>
+        <li class="third-city">Tokyo</li>
+        <li class="fourth-city">Kyiv</li>
+      </ul>
+      <h1>London</h1>
+      <div class="row">
+        <div class="col" class="current-date">
+          <div class="day">Monday</div>
+          <div class="date">12 April 2022</div>
+          <div class="time">13 : 00</div>
+        </div>
+        <div class="col" id="weather">
+          <div class="current-weather">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <div class="weather-description">
+            Sunny
+          </div>
+          <div class="current-temperature">
+            <span id="currentDayCelsius">21</span> <a href="#" class="celsius">&#176;C</a> |
+            <a href="#" class="fahrenheit">&#176;F</a>
+          </div>
+          <div class="max-min" class="temp">
+            H: <span id="max-temp">21</span> <a href="#" class="celsius">&#176;C</a> |
+            <a href="#" class="fahrenheit">&#176;F</a> 
+            <br />
+            L: <span id="min-temp">13</span> <a href="#" class="celsius">&#176;C</a> |
+            <a href="#" class="fahrenheit">&#176;F</a>
+          </div>
+        </div>
+        <div class="col" class="weather-phw">
+          <div class="pressure">Pressure: <span id="current-pressure">1023</span> hPa</div>
+          <div class="humidity">Humidity: <span id="current-humidity">100</span>%</div>
+          <div class="wind">Wind: <span id="current-wind">11</span> mph</div>
+        </div>
+      </div>
+      <div class="accordion-body">
+        <div class="row">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-2 text-center">
+              Tuesday <br />
+              <div class="current-weather">
+                <i class="fa-solid fa-cloud"></i>
+              </div>
+              <div class="temp"> <span>19</span> 
+                <a href="#" class="celsius"></a>&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a> 
+                <br />
+                <span>11</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a>
+              </div>
+            </div>
+
+            <div class="col col-lg-2 text-center">
+              Wednesday <br />
+              <div class="current-weather">
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+              </div>
+              <div class="temp">
+                <span>17</span> <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a> 
+                <br />
+                <span>10</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a>
+              </div>
+            </div>
+
+            <div class="col col-lg-2 text-center">
+              Thursday
+              <br />
+              <div class="current-weather">
+                <i class="fa-solid fa-cloud-sun"></i>
+              </div>
+              <div class="temp">
+                <span>20</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a> 
+                <br />
+                <span>13</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a>
+              </div>
+            </div>
+
+            <div class="col col-lg-2 text-center">
+              Friday
+              <br />
+              <div class="current-weather">
+                <i class="fa-solid fa-cloud-sun-rain"></i>
+              </div>
+              <div class="temp">
+                <span>23</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a> 
+                <br />
+                <span>15</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a>
+              </div>
+            </div>
+
+            <div class="col col-lg-2 text-center">
+              Saturday
+              <br />
+              <div class="current-weather">
+                <i class="fa-solid fa-sun"></i>
+              </div>
+              <div class="temp">
+                <span>25</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a> 
+                <br />
+                <span">17</span>  <a href="#" class="celsius">&#176;C</a> |
+                <a href="#" class="fahrenheit">&#176;F</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Coded by Viktoriia Iliuchenko</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
