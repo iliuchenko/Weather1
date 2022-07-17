@@ -27,33 +27,37 @@
   <body>
     <div class="container">
       <form>
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              id="search-city"
+               class="search"
+              placeholder="Type a city..."
+              autocomplete="off"
+              autofocus: on
+           />
+          </div>
+          <div class="col-3">
+            <button type="submit" class="search-button">Search the city
+            </button>
+          </div>
+          <div class="col-3">
+            <button type="submit" class="search-button"    id="search-current-location">Current location
+            </button>
+          </div>
+        </div>
+      </form>
       <div class="row">
         <div class="col-6">
-          <input
-            type="search"
-            id="search-city"
-            class="search"
-            placeholder="Type a city..."
-            autocomplete="off"
-            autofocus: on
-          />
-        </div>
-        <div class="col-3">
-          <button type="submit" class="search-button">Search the city
-          </button>
-        </div>
-        <div class="col-3">
-          <button type="submit" class="search-button" id="search-current-location">Current location
-          </button>
+          <ul>
+            <li class="first-city">London</li>
+            <li class="second-city">New York</li>
+            <li class="third-city">Tokyo</li>
+          </ul> 
         </div>
       </div>
-      </form>
-      <ul>
-        <li class="first-city">London</li>
-        <li class="second-city">New York</li>
-        <li class="third-city">Tokyo</li>
-        <li class="fourth-city">Kyiv</li>
-      </ul>
+      
       <h1>London</h1>
       <div class="current-icon">
         <img src="" alt="" id="icon" />
