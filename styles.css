@@ -113,7 +113,7 @@ img {
   opacity: 0.6;
 }
 
-p {
+footer {
   margin-top: 30px;
   font-size: 12px;
   text-align: center;
@@ -123,4 +123,10 @@ p {
 .fahrenheit {
   color: #e7eaf6;
   text-decoration: none;
+}
+
+
+.footer-link {
+  text-decoration: none;
+  color: #e7eaf6;
 }
