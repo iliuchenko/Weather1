@@ -78,7 +78,7 @@ function searchWeather(response) {
       `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     );
   document
-    .querySelector(".current-icon")
+    .querySelector("#icon")
     .setAttribute("alt", response.data.weather[0].description);
 }
 
