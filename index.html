@@ -29,21 +29,19 @@
       <form>
         <div class="row">
           <div class="col-6">
-            <input
-              type="search"
-              id="search-city"
-               class="search"
-              placeholder="Type a city..."
-              autocomplete="off"
-              autofocus: on
-           />
+            <input type="search" id="search-city" class="search"
+            placeholder="Type a city..." autocomplete="off" autofocus: on />
           </div>
           <div class="col-3">
-            <button type="submit" class="search-button">Search the city
-            </button>
+            <button type="submit" class="search-button">Search the city</button>
           </div>
           <div class="col-3">
-            <button type="submit" class="search-button" id="search-current-location">Current location
+            <button
+              type="submit"
+              class="search-button"
+              id="search-current-location"
+            >
+              Current location
             </button>
           </div>
         </div>
@@ -54,7 +52,7 @@
             <li class="first-city">London</li>
             <li class="second-city">New York</li>
             <li class="third-city">Tokyo</li>
-          </ul> 
+          </ul>
         </div>
       </div>
       <h1>London</h1>
@@ -62,119 +60,47 @@
         <img src="" alt="" id="icon" />
       </div>
       <div class="row">
-        <div class="col" class="current-date">
+        <div class="col-4" class="current-date">
           <div class="day">Monday</div>
           <div class="date">12 April 2022</div>
           <div class="time">13 : 00</div>
         </div>
-        <div class="col" id="weather">
-          <div class="weather-description">
-            Sunny
-          </div>
+        <div class="col-4" id="weather">
+          <div class="weather-description">Sunny</div>
           <div class="current-temperature">
-            <span id="currentDayCelsius">21</span> <a href="#" class="celsius">&#176;C</a> |
+            <span id="currentDayCelsius">21</span>
+            <a href="#" class="celsius">&#176;C</a> |
             <a href="#" class="fahrenheit">&#176;F</a>
           </div>
           <div class="max-min" class="temp">
-            H: <span id="max-temp">21</span> <a href="#" class="celsius">&#176;C</a> |
-            <a href="#" class="fahrenheit">&#176;F</a> 
+            H: <span id="max-temp">21</span>
+            <a href="#" class="celsius">&#176;C</a> |
+            <a href="#" class="fahrenheit">&#176;F</a>
             <br />
-            L: <span class="forecast-temperature-min" id="min-temp">13</span> <a href="#" class="celsius">&#176;C</a> |
+            L: <span class="forecast-temperature-min" id="min-temp">13</span>
+            <a href="#" class="celsius">&#176;C</a> |
             <a href="#" class="fahrenheit">&#176;F</a>
           </div>
         </div>
-        <div class="col" class="weather-phw">
-          <div class="pressure">Pressure: <span id="current-pressure">1023</span> hPa</div>
-          <div class="humidity">Humidity: <span id="current-humidity">100</span>%</div>
+        <div class="col-4" class="weather-phw">
+          <div class="pressure">
+            Pressure: <span id="current-pressure">1023</span> hPa
+          </div>
+          <div class="humidity">
+            Humidity: <span id="current-humidity">100</span>%
+          </div>
           <div class="wind">Wind: <span id="current-wind">11</span> mph</div>
         </div>
       </div>
-      <div class="accordion-body">
-        <div class="row">
-          <div class="row justify-content-md-center">
-            <div class="col col-lg-2 text-center">
-              <div class="forecast-first-day">
-                Tuesday 
-              </div>
-              <div class="current-icon">
-                <img src="" alt="" id="icon-first-day" />
-              </div>
-              <div class="temp"> <span>19</span> 
-                <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a> 
-                <br />
-                <span class="forecast-temperature-min">11</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a>
-              </div>
-            </div>
-
-            <div class="col col-lg-2 text-center">
-              <div class="forecast-second-day">
-                Wednesday 
-              </div>
-              <div class="current-icon">
-                <img src="" alt="" id="icon-second-day" />
-              </div>
-              <div class="temp">
-                <span>17</span> <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a> 
-                <br />
-                <span class="forecast-temperature-min">10</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a>
-              </div>
-            </div>
-
-            <div class="col col-lg-2 text-center">
-              <div class="forecast-third-day">
-                Thursday
-              </div>
-              <div class="current-icon">
-                <img src="" alt="" id="icon-third-day" />
-              </div>
-              <div class="temp">
-                <span>20</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a> 
-                <br />
-                <span class="forecast-temperature-min">13</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a>
-              </div>
-            </div>
-
-            <div class="col col-lg-2 text-center">
-              <div class="forecast-fourth-day">
-                Friday
-              </div>
-              <div class="current-icon">
-                <img src="" alt="" id="icon-fourth-day" />
-              </div>
-              <div class="temp">
-                <span>23</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a> 
-                <br />
-                <span class="forecast-temperature-min">15</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a>
-              </div>
-            </div>
-
-            <div class="col col-lg-2 text-center">
-              <div class="forecast-fifth-day">
-                Saturday
-              </div>
-              <div class="current-icon">
-                <img src="" alt="" id="icon-fifth-day" />
-              </div>
-              <div class="temp">
-                <span>25</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a> 
-                <br />
-                <span class="forecast-temperature-min">17</span>  <a href="#" class="celsius">&#176;C</a> |
-                <a href="#" class="fahrenheit">&#176;F</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <footer>Coded by Viktoriia Iliuchenko and the project is <a href="https://github.com/iliuchenko/Weather1.git" target="_blank" class="footer-link">open-sourced on GitHub</a> 
+      <div class="weather-forecast" id="forecast"></div>
+      <footer>
+        Coded by Viktoriia Iliuchenko and the project is
+        <a
+          href="https://github.com/iliuchenko/Weather1.git"
+          target="_blank"
+          class="footer-link"
+          >open-sourced on GitHub</a
+        >
       </footer>
     </div>
     <script src="index.js"></script>

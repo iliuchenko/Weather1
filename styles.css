@@ -67,15 +67,14 @@ button:hover {
   font-size: 20px;
 }
 .weather-description {
-margin-top: -15px;
+  margin-top: -15px;
 }
 
-img {
+#icon {
   display: block;
   margin: 0 auto;
   width: 80px;
 }
-
 
 .day {
   margin-top: 15px;
@@ -101,8 +100,15 @@ img {
   text-align: center;
 }
 
-.accordion-body {
+.weather-forecast {
   margin-top: 40px;
+  text-align: center;
+}
+
+.icon-forecast {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
 }
 
 .temp {
@@ -124,7 +130,6 @@ footer {
   color: #e7eaf6;
   text-decoration: none;
 }
-
 
 .footer-link {
   text-decoration: none;
