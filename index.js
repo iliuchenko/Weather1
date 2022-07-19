@@ -145,6 +145,34 @@ function submit(event) {
 let searchCity = document.querySelector("form");
 searchCity.addEventListener("submit", submit);
 
+function searchFirstCity() {
+  search("London");
+}
+
+let firstCity = document.querySelector(".first-city");
+firstCity.addEventListener("click", searchFirstCity);
+
+function searchSecondCity() {
+  search("New York");
+}
+
+let secondCity = document.querySelector(".second-city");
+secondCity.addEventListener("click", searchSecondCity);
+
+function searchThirdCity() {
+  search("Tokyo");
+}
+
+let thirdCity = document.querySelector(".third-city");
+thirdCity.addEventListener("click", searchThirdCity);
+
+function searchFourthCity() {
+  search("Kyiv");
+}
+
+let fourthCity = document.querySelector(".fourth-city");
+fourthCity.addEventListener("click", searchFourthCity);
+
 search("London");
 
 // Show current location

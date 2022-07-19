@@ -13,13 +13,25 @@ ul {
   overflow: hidden;
   list-style-type: none;
   padding-left: 0;
-  margin-top: -10px;
+  margin-top: -5px;
   font-size: 14px;
 }
 
 li {
   display: inline-block;
   padding: 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: #e7eaf6;
+  opacity: 0.6;
+}
+
+li a:hover {
+  opacity: 1;
+  color: white;
+  transition: all 200ms ease-in-out;
 }
 
 h1 {
@@ -53,12 +65,14 @@ input {
 button:hover {
   color: white;
   border: 1px solid #596e79;
+  transition: all 200ms ease-in-out;
 }
 
 .search-button:hover,
 #search-current-location:hover {
   color: black;
   background: #8dc6ff;
+  transition: all 200ms ease-in-out;
 }
 
 .current-temperature,
